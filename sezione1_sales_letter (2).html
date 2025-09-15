@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo 7 Giorni - Sales Letter</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .header-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .main-headline {
+            font-size: 42px;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .sub-headline {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+        .social-proof {
+            background-color: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 5px solid #ffd700;
+        }
+        .social-proof-text {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .promise-text {
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .highlight {
+            background-color: #ffd700;
+            color: #333;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .benefit-list {
+            text-align: left;
+            display: inline-block;
+            margin: 20px 0;
+        }
+        .benefit-item {
+            font-size: 16px;
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+        .checkmark {
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        .cta-section {
+            background-color: #ff4757;
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .cta-text {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .cta-button {
+            background-color: #ffd700;
+            color: #333;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            text-transform: uppercase;
+        }
+        .urgency-note {
+            font-size: 14px;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        
+        .content-section {
+            background-color: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .empathy-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-headline {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 25px;
+            line-height: 1.3;
+        }
+        
+        .inner-voice {
+            margin: 30px 0;
+        }
+        
+        .thought-bubble {
+            background-color: #f8f9fa;
+            border-left: 4px solid #ff4757;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 18px;
+            color: #666;
+            font-style: italic;
+            line-height: 1.6;
+        }
+        
+        .truth-revelation {
+            margin: 40px 0;
+        }
+        
+        .truth-headline {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .truth-text {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+        
+        .validation-box {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        
+        .validation-text {
+            font-size: 18px;
+        }
+        
+        .problem-amplification {
+            margin: 50px 0;
+        }
+        
+        .pain-intro {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .pain-highlight {
+            background-color: #ff4757;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .pain-list {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .pain-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #fff5f5;
+            border-radius: 10px;
+            border-left: 4px solid #ff4757;
+        }
+        
+        .pain-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            margin-top: 2px;
+        }
+        
+        .pain-content {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        
+        .normal-feeling {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #e8f5e8;
+            border-radius: 8px;
+        }
+        
+        .problem-diagnosis {
+            margin: 50px 0;
+        }
+        
+        .diagnosis-box {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+        
+        .diagnosis-headline {
+            font-size: 24px;
+            margin-bottom: 25px;
+            text-align: center;
+            line-height: 1.4;
+        }
+        
+        .old-method {
+            background-color: rgba(255,255,255,0.2);
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        
+        .old-method-box {
+            background-color: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .old-method-box h4 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .old-method-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .old-method-list li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .old-method-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #ffd700;
+        }
+        
+        .method-result {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        
+        .method-result.bad {
+            background-color: rgba(255,0,0,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        .solution-hint {
+            background-color: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+        
+        .hint-text {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        .need-statement {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .need-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+        
+        .need-item {
+            font-size: 16px;
+            padding: 8px 0;
+        }
+        
+        .preview-section {
+            margin: 50px 0;
+        }
+        
+        .preview-box {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .preview-headline {
+            font-size: 24px;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+        
+        .time-highlight {
+            background-color: #ffd700;
+            color: #333;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        
+        .transformation-promise {
+            margin: 25px 0;
+        }
+        
+        .transformation-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .before {
+            background-color: rgba(255,0,0,0.3);
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-decoration: line-through;
+        }
+        
+        .after {
+            background-color: rgba(0,255,0,0.3);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .transformation-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .benefit {
+            background-color: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        
+        .works-even-if {
+            background-color: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+        
+        .even-if-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 8px;
+            margin-top: 15px;
+        }
+        
+        .even-if-item {
+            font-size: 14px;
+        }
+        
+        .cta-section-2 {
+            background-color: #2c3e50;
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .cta-text-2 {
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        /* STORY SECTION STYLES */
+        .story-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 50px 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .story-intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .story-headline {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .story-subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            font-weight: normal;
+        }
+
+        .story-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .story-chapter {
+            background-color: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        .chapter-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+
+        .story-text {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .story-text p {
+            margin-bottom: 15px;
+        }
+
+        .pain-word {
+            background-color: rgba(255,0,0,0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .quote-box {
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-style: italic;
+            border-left: 4px solid;
+        }
+
+        .quote-box.negative {
+            background-color: rgba(255,0,0,0.2);
+            border-color: #ff6b6b;
+        }
+
+        .quote-box.positive {
+            background-color: rgba(0,255,0,0.2);
+            border-color: #4CAF50;
+        }
+
+        .critical-moment {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .moment-text {
+            font-size: 20px;
+            font-weight: bold;
+            background-color: rgba(255,255,255,0.2);
+            padding: 15px 25px;
+            border-radius: 25px;
+            display: inline-block;
+        }
+
+        .failure-highlight {
+            background-color: rgba(255,0,0,0.4);
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+
+        .inner-dialogue {
+            background-color: rgba(0,0,0,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+
+        .dialogue-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .dialogue-content {
+            display: grid;
+            gap: 8px;
+        }
+
+        .dialogue-item {
+            font-style: italic;
+            opacity: 0.9;
+            padding: 5px 0;
+        }
+
+        .turning-point-intro {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .turning-point {
+            border: 2px solid #ffd700;
+            background-color: rgba(255,215,0,0.1);
+        }
+
+        .revelation-box {
+            background-color: rgba(255,215,0,0.2);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 25px 0;
+            border: 2px solid #ffd700;
+        }
+
+        .revelation-text {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        .method-highlight {
+            background-color: #ffd700;
+            color: #333;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .transformation {
+            background: linear-gradient(135deg, rgba(76,175,80,0.3), rgba(139,195,74,0.3));
+            border: 2px solid #4CAF50;
+        }
+
+        .method-steps {
+            margin: 30px 0;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        .step-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            margin-top: 2px;
+        }
+
+        .step-content {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .mindset-shift {
+            background-color: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .shift-title {
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .shift-content {
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        .old-way {
+            background-color: rgba(255,0,0,0.3);
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-decoration: line-through;
+        }
+
+        .new-way {
+            background-color: rgba(0,255,0,0.3);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .results {
+            background: linear-gradient(135deg, rgba(255,215,0,0.3), rgba(255,193,7,0.3));
+            border: 2px solid #ffd700;
+        }
+
+        .results-comparison {
+            margin: 30px 0;
+        }
+
+        .before-after {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .before-column, .after-column {
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .before-column {
+            background-color: rgba(255,0,0,0.2);
+        }
+
+        .after-column {
+            background-color: rgba(0,255,0,0.2);
+        }
+
+        .before-column h4, .after-column h4 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .result-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .result-list li {
+            margin: 10px 0;
+            padding: 8px 0;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .luca-quote {
+            background-color: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 4px solid #ffd700;
+        }
+
+        .quote-content {
+            text-align: center;
+        }
+
+        .quote-content p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .quote-author {
+            font-size: 14px;
+            opacity: 0.8;
+            font-style: normal;
+        }
+
+        .key-insight {
+            font-size: 18px;
+            text-align: center;
+            margin: 30px 0 15px 0;
+            font-weight: bold;
+        }
+
+        .insight-box {
+            background-color: rgba(255,215,0,0.2);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.4;
+            border: 2px solid #ffd700;
+        }
+
+        .story-conclusion {
+            background-color: rgba(255,255,255,0.1);
+            padding: 40px 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+            backdrop-filter: blur(10px);
+        }
+
+        .connection-section {
+            text-align: center;
+        }
+
+        .connection-title {
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        .connection-text p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .recognition-list {
+            max-width: 500px;
+            margin: 30px auto;
+            text-align: left;
+        }
+
+        .recognition-item {
+            display: flex;
+            align-items: center;
+            margin: 12px 0;
+            padding: 10px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 8px;
+        }
+
+        .recognition-item .check {
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 12px;
+            font-size: 18px;
+        }
+
+        .hope-message {
+            background-color: rgba(76,175,80,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        .order-highlight {
+            background-color: #ffd700;
+            color: #333;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .method-promise {
+            background-color: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 25px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .concrete-highlight {
+            background-color: rgba(0,123,255,0.3);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .before-after {
+                grid-template-columns: 1fr;
+            }
+            
+            .main-headline {
+                font-size: 28px;
+            }
+            
+            .story-headline {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- SEZIONE 1: HEADLINE + SUBHEADLINE KILLER -->
+    <div class="header-section">
+        <h1 class="main-headline">
+            Ti Senti Sommerso dagli Esami,<br>
+            con l'Ansia alle Stelle e<br>
+            Zero Controllo sulla Situazione?
+        </h1>
+        
+        <h2 class="sub-headline">
+            Il <span class="highlight">Metodo 7 Giorni</span> ha già aiutato<br>
+            847 studenti universitari a<br>
+            <strong>Superare Più Esami Studiando Meno</strong><br>
+            senza passare h24 sui libri
+        </h2>
+        
+        <div class="social-proof">
+            <div class="social-proof-text">
+                ✨ RISULTATO GARANTITO ✨
+            </div>
+            <div class="promise-text">
+                In soli 7 giorni costruisci un piano d'esame <strong>chiaro, sostenibile e personalizzato</strong>: arrivi sereno al prossimo appello con il controllo finalmente in mano.
+            </div>
+        </div>
+        
+        <div class="benefit-list">
+            <div class="benefit-item">
+                <span class="checkmark">✅</span>
+                <span>Trasformi il caos in un piano giornaliero preciso</span>
+            </div>
+            <div class="benefit-item">
+                <span class="checkmark">✅</span>
+                <span>Riduci l'ansia perché sai sempre cosa fare</span>
+            </div>
+            <div class="benefit-item">
+                <span class="checkmark">✅</span>
+                <span>Studi meno ore ma ottieni risultati migliori</span>
+            </div>
+            <div class="benefit-item">
+                <span class="checkmark">✅</span>
+                <span>Funziona anche con più esami contemporaneamente</span>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <div class="cta-text">
+                🎯 <strong>Vuoi scoprire come 847 studenti hanno già cambiato il loro approccio agli esami?</strong>
+            </div>
+            <button class="cta-button">
+                Continua a leggere per scoprire come →
+            </button>
+            <div class="urgency-note">
+                ⏰ Tra pochi minuti capirai perché il tuo metodo attuale non funziona<br>
+                e come risolvere il problema in meno di una settimana
+            </div>
+        </div>
+    </div>
+
+    <!-- SEZIONE 2: APERTURA EMPATICA + IDENTIFICAZIONE PROBLEMA -->
+    <div class="content-section">
+        <div class="empathy-section">
+            <h2 class="section-headline">
+                🤔 Hai mai pensato che il problema fossi tu?
+            </h2>
+            
+            <div class="inner-voice">
+                <div class="thought-bubble">
+                    <em>"Non studio abbastanza..."</em><br>
+                    <em>"Non sono abbastanza intelligente..."</em><br>
+                    <em>"Forse l'università non fa per me..."</em>
+                </div>
+            </div>
+            
+            <div class="truth-revelation">
+                <h3 class="truth-headline">La verità è un'altra:</h3>
+                <div class="truth-text">
+                    <strong>Nessuno ti ha mai insegnato davvero a studiare.</strong><br>
+                    E all'università, improvvisare non basta più.
+                </div>
+                
+                <div class="validation-box">
+                    <div class="validation-text">
+                        <strong>🫂 Non è colpa tua.</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="problem-amplification">
+            <div class="pain-points">
+                <p class="pain-intro">
+                    Se ti senti <span class="pain-highlight">schiacciato</span> da:
+                </p>
+                
+                <div class="pain-list">
+                    <div class="pain-item">
+                        <span class="pain-icon">😰</span>
+                        <div class="pain-content">
+                            <strong>Esami che si accumulano</strong> e non sai da dove iniziare
+                        </div>
+                    </div>
+                    
+                    <div class="pain-item">
+                        <span class="pain-icon">📚</span>
+                        <div class="pain-content">
+                            <strong>Appunti sparsi ovunque</strong> - slide, gruppi WhatsApp, fogli volanti
+                        </div>
+                    </div>
+                    
+                    <div class="pain-item">
+                        <span class="pain-icon">⚡</span>
+                        <div class="pain-content">
+                            <strong>Ansia che sale alle stelle</strong> solo al pensiero del prossimo orale
+                        </div>
+                    </div>
+                    
+                    <div class="pain-item">
+                        <span class="pain-icon">⏰</span>
+                        <div class="pain-content">
+                            <strong>Ore e ore sui libri</strong> ma senza mai la certezza di essere pronto
+                        </div>
+                    </div>
+                    
+                    <div class="pain-item">
+                        <span class="pain-icon">🌙</span>
+                        <div class="pain-content">
+                            <strong>Notti insonni</strong> a rimuginare se ce la farai
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="normal-feeling">
+                    <strong>È normale.</strong> Questi pensieri li hanno avuti migliaia di studenti prima di te.
+                </div>
+            </div>
+        </div>
+
+        <div class="problem-diagnosis">
+            <div class="diagnosis-box">
+                <h3 class="diagnosis-headline">
+                    🎯 Il VERO problema è che stai ancora usando<br>
+                    il <span class="old-method">"metodo da liceo"</span>
+                </h3>
+                
+                <div class="method-comparison">
+                    <div class="old-method-box">
+                        <h4>❌ Metodo da Liceo (quello che fai ora):</h4>
+                        <ul class="old-method-list">
+                            <li>Leggi tutto dall'inizio alla fine</li>
+                            <li>Evidenzi e riassumi "a caso"</li>
+                            <li>Speri di ricordare tutto il giorno dell'esame</li>
+                            <li>Vai avanti "a sensazione"</li>
+                        </ul>
+                        <div class="method-result bad">
+                            <strong>Risultato:</strong> Caos, ansia e tempo sprecato
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-hint">
+                    <div class="hint-text">
+                        Ma il liceo aveva 6-8 materie semplici...<br>
+                        L'università ha programmi enormi e concetti complessi.
+                    </div>
+                    
+                    <div class="need-statement">
+                        <strong>Quello che ti serve è un metodo più strutturato, che ti dica:</strong>
+                    </div>
+                    
+                    <div class="need-list">
+                        <div class="need-item">✔️ <strong>Cosa fare oggi</strong> e cosa domani</div>
+                        <div class="need-item">✔️ <strong>Per quanto tempo</strong> studiare ogni argomento</div>
+                        <div class="need-item">✔️ <strong>Come verificare</strong> se sei davvero pronto</div>
+                        <div class="need-item">✔️ <strong>Come gestire</strong> imprevisti e ritardi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview-section">
+            <div class="preview-box">
+                <h3 class="preview-headline">
+                    🎯 Nei prossimi minuti ti mostro un meccanismo pratico<br>
+                    per riprendere il controllo della situazione<br>
+                    <span class="time-highlight">già nei prossimi 7 giorni</span>
+                </h3>
+                
+                <div class="transformation-promise">
+                    <div class="transformation-text">
+                        Passerai da <span class="before">"studiare a caso"</span> a <span class="after">studiare con ordine</span>:
+                    </div>
+                    
+                    <div class="transformation-benefits">
+                        <div class="benefit">🗂️ Materiali finalmente in ordine</div>
+                        <div class="benefit">🎯 Priorità cristalline</div>
+                        <div class="benefit">📅 Una settimana disegnata per reggere imprevisti</div>
+                        <div class="benefit">✅ Una prova generale prima dell'esame</div>
+                    </div>
+                </div>
+                
+                <div class="works-even-if">
+                    <strong>Perfetto anche se:</strong>
+                    <div class="even-if-list">
+                        <span class="even-if-item">• Sei in ritardo con gli esami</span>
+                        <span class="even-if-item">• Stai preparando più esami insieme</span>
+                        <span class="even-if-item">• Lavori o hai poco tempo</span>
+                        <span class="even-if-item">• Hai già provato altri metodi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section-2">
+            <div class="cta-text-2">
+                👇 <strong>Continua a leggere per scoprire come un semplice cambio di strategia<br>
+                può trasformare completamente la tua esperienza universitaria...</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEZIONE 3: STORIA DEL PROTAGONISTA (LUCA) -->
+    <div class="story-section">
+        <div class="story-intro">
+            <h2 class="story-headline">
+                📖 La Storia di Luca<br>
+                <span class="story-subtitle">(forse ti riconoscerai)</span>
+            </h2>
+        </div>
+
+        <div class="story-content">
+            <div class="story-chapter">
+                <h3 class="chapter-title">📉 Il Punto di Rottura</h3>
+                <div class="story-text">
+                    <p>Luca aveva <strong>smesso di crederci</strong>.</p>
+                    
+                    <p>Ogni sessione era diventata un <span class="pain-word">incubo</span>: tre esami da preparare, appunti sparsi ovunque, notti insonni passate a fissare il soffitto mentre l'ansia montava come un'onda inarrestabile.</p>
+                    
+                    <p>I suoi genitori continuavano a ripetergli la solita frase:</p>
+                    
+                    <div class="quote-box negative">
+                        <em>"Devi solo studiare di più, Luca."</em>
+                    </div>
+                    
+                    <p>E lui ci provava, davvero. Passava <strong>12-14 ore al giorno</strong> sui libri. Evidenziava tutto. Riscriveva appunti su appunti. Si alzava alle 6 di mattina e andava a letto dopo mezzanotte.</p>
+                    
+                    <p>Ma più ore ci metteva, più l'ansia aumentava.</p>
+                    
+                    <div class="critical-moment">
+                        <div class="moment-text">
+                            Fino al giorno della sua <span class="failure-highlight">prima bocciatura</span>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-chapter">
+                <h3 class="chapter-title">💔 Il Momento più Buio</h3>
+                <div class="story-text">
+                    <p>Quel giorno Luca è uscito dall'aula d'esame con le gambe che tremavano.</p>
+                    
+                    <p>Aveva studiato <em>tutto</em> il programma. Sapeva le definizioni a memoria. Aveva fatto riassunti di centinaia di pagine.</p>
+                    
+                    <p>Ma quando il professore gli aveva fatto la seconda domanda - una semplice applicazione pratica - era andato completamente in <strong>blackout</strong>.</p>
+                    
+                    <div class="inner-dialogue">
+                        <div class="dialogue-title">I pensieri di Luca quella sera:</div>
+                        <div class="dialogue-content">
+                            <div class="dialogue-item">"Forse non sono portato per l'università..."</div>
+                            <div class="dialogue-item">"I miei compagni sono più intelligenti di me..."</div>
+                            <div class="dialogue-item">"Ho sprecato mesi per niente..."</div>
+                            <div class="dialogue-item">"Non ce la farò mai..."</div>
+                        </div>
+                    </div>
+                    
+                    <p class="turning-point-intro">Ma poi è successo qualcosa che ha cambiato tutto...</p>
+                </div>
+            </div>
+
+            <div class="story-chapter turning-point">
+                <h3 class="chapter-title">💡 La Rivelazione</h3>
+                <div class="story-text">
+                    <p>Una sera, mentre Luca era seduto in biblioteca circondato da montagne di appunti, ha sentito due studenti del terzo anno parlare:</p>
+                    
+                    <div class="quote-box positive">
+                        <em>"Io non studio mai più di 6 ore al giorno, ma ho una media del 28. Il segreto? Ho un sistema. So sempre cosa studiare, quando farlo e come capire se sono pronto."</em>
+                    </div>
+                    
+                    <p>In quel momento Luca ha capito la <strong>verità</strong>:</p>
+                    
+                    <div class="revelation-box">
+                        <div class="revelation-text">
+                            Il problema non era lui.<br>
+                            Il problema era il <span class="method-highlight">metodo</span>.
+                        </div>
+                    </div>
+                    
+                    <p>Stava ancora studiando "come al liceo": appunti ovunque, evidenziatori a caso, maratone dell'ultimo minuto, sperando che la memoria non lo tradisse.</p>
+                    
+                    <p>Ma quel metodo, all'università, <strong>non bastava più</strong>.</p>
+                </div>
+            </div>
+
+            <div class="story-chapter transformation">
+                <h3 class="chapter-title">🚀 La Trasformazione</h3>
+                <div class="story-text">
+                    <p>Luca ha deciso di cambiare approccio completamente.</p>
+                    
+                    <p>Ha scoperto un sistema semplice ma strutturato che in seguito sarebbe diventato il <strong>Metodo 7 Giorni</strong>:</p>
+                    
+                    <div class="method-steps">
+                        <div class="step">
+                            <div class="step-icon">🧭</div>
+                            <div class="step-content">
+                                <strong>Bussola d'esame chiara:</strong> invece di studiare "tutto", ha mappato le 15 domande più probabili con priorità precise
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-icon">🗓️</div>
+                            <div class="step-content">
+                                <strong>Griglia settimanale che regge imprevisti:</strong> blocchi da 90 minuti con buffer strategici per non andare mai in panico
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-icon">🎯</div>
+                            <div class="step-content">
+                                <strong>Mini-appelli per misurare i progressi:</strong> ogni 2-3 giorni sapeva esattamente a che punto era
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mindset-shift">
+                        <div class="shift-title">Il cambio di mentalità:</div>
+                        <div class="shift-content">
+                            Ha smesso di <span class="old-way">sperare</span>.<br>
+                            Ha iniziato a <span class="new-way">sapere</span>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-chapter results">
+                <h3 class="chapter-title">✨ I Risultati</h3>
+                <div class="story-text">
+                    <p>Dopo appena 3 settimane con il nuovo sistema, Luca era una persona diversa.</p>
+                    
+                    <div class="results-comparison">
+                        <div class="before-after">
+                            <div class="before-column">
+                                <h4>❌ PRIMA:</h4>
+                                <ul class="result-list">
+                                    <li>14 ore al giorno di studio confuso</li>
+                                    <li>Ansia costante</li>
+                                    <li>Non sapeva mai se era pronto</li>
+                                    <li>Bocciature e voti bassi</li>
+                                    <li>Zero vita sociale</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="after-column">
+                                <h4>✅ DOPO:</h4>
+                                <ul class="result-list">
+                                    <li>6-7 ore di studio <em>mirato</em></li>
+                                    <li>Calma e controllo</li>
+                                    <li>Sapeva esattamente quando era pronto</li>
+                                    <li>Primo 30 della sua carriera</li>
+                                    <li>Tempo per sport e amici</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="luca-quote">
+                        <div class="quote-content">
+                            <p><em>"Per la prima volta in 3 anni di università, so esattamente cosa fare ogni giorno. L'ansia è sparita perché ho i dati, non le sensazioni. E i risultati parlano da soli."</em></p>
+                            <div class="quote-author">- Luca, 22 anni, Ingegneria Gestionale</div>
+                        </div>
+                    </div>
+                    
+                    <p class="key-insight">Ma ecco la cosa più importante:</p>
+                    
+                    <div class="insight-box">
+                        <strong>Luca non è diventato più intelligente.<br>
+                        Non ha iniziato a studiare di più.<br>
+                        Ha semplicemente smesso di studiare "a caso".</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-conclusion">
+                <div class="connection-section">
+                    <h3 class="connection-title">🤔 Ti riconosci in Luca?</h3>
+                    
+                    <div class="connection-text">
+                        <p>Se anche tu:</p>
+                        
+                        <div class="recognition-list">
+                            <div class="recognition-item">
+                                <span class="check">✓</span> Studi tanto ma i risultati non arrivano
+                            </div>
+                            <div class="recognition-item">
+                                <span class="check">✓</span> Ti senti sopraffatto da appunti e scadenze
+                            </div>
+                            <div class="recognition-item">
+                                <span class="check">✓</span> Non sai mai se sei davvero pronto per l'esame
+                            </div>
+                            <div class="recognition-item">
+                                <span class="check">✓</span> L'ansia ti blocca proprio quando serve essere lucido
+                            </div>
+                        </div>
+                        
+                        <div class="hope-message">
+                            <strong>Sappi che non dipende dall'intelligenza.</strong><br>
+                            Dipende dall'<span class="order-highlight">ordine</span>.
+                        </div>
+                        
+                        <div class="method-promise">
+                            Il <strong>Metodo 7 Giorni</strong> non è per studenti "perfetti".<br>
+                            È pensato per chi si sente perso, in ritardo, confuso...<br>
+                            e vuole solo un <span class="concrete-highlight">piano concreto</span> per uscirne.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

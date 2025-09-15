@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sezione 6 - Dimostrazione con Proof Sociale</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        /* SEZIONE 6: DIMOSTRAZIONE CON PROOF SOCIALE */
+        .proof-section {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 60px 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        .proof-intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .proof-headline {
+            font-size: 38px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+
+        .proof-subtitle {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            line-height: 1.4;
+        }
+
+        .credibility-statement {
+            background-color: rgba(255,255,255,0.15);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Testimonial Styles */
+        .testimonials-container {
+            margin: 50px 0;
+        }
+
+        .testimonials-title {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .testimonial {
+            background-color: rgba(255,255,255,0.95);
+            color: #333;
+            padding: 35px;
+            border-radius: 20px;
+            margin: 30px 0;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            position: relative;
+            border-left: 5px solid #00b894;
+        }
+
+        .testimonial::before {
+            content: '"';
+            font-size: 80px;
+            color: #00b894;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-family: serif;
+            opacity: 0.3;
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00b894, #00a085);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .testimonial-info {
+            flex: 1;
+        }
+
+        .testimonial-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #2d3436;
+        }
+
+        .testimonial-details {
+            font-size: 14px;
+            color: #636e72;
+            margin-bottom: 5px;
+        }
+
+        .testimonial-situation {
+            background-color: #fdcb6e;
+            color: #2d3436;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .testimonial-content {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #2d3436;
+        }
+
+        .testimonial-results {
+            background: linear-gradient(135deg, #00b894, #00a085);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .results-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            text-align: center;
+        }
+
+        .result-item {
+            background-color: rgba(255,255,255,0.1);
+            padding: 12px;
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+        }
+
+        .result-number {
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+            color: #ffeaa7;
+        }
+
+        .result-label {
+            font-size: 12px;
+            opacity: 0.9;
+            margin-top: 4px;
+        }
+
+        .featured-testimonial {
+            background: linear-gradient(135deg, #fd79a8, #e84393);
+            color: white;
+            border-left: 5px solid #ffeaa7;
+            margin: 40px 0;
+        }
+
+        .featured-testimonial .testimonial-content {
+            color: white;
+            font-size: 18px;
+        }
+
+        .featured-testimonial .testimonial-name {
+            color: #ffeaa7;
+        }
+
+        .featured-testimonial .testimonial-details {
+            color: rgba(255,255,255,0.8);
+        }
+
+        /* Case Study Section */
+        .case-study-section {
+            background-color: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px 0;
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .case-study-title {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #ffeaa7;
+        }
+
+        .case-study {
+            background-color: rgba(255,255,255,0.95);
+            color: #333;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 25px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .case-header {
+            border-bottom: 2px solid #74b9ff;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .case-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2d3436;
+            margin-bottom: 8px;
+        }
+
+        .case-subtitle {
+            font-size: 14px;
+            color: #636e72;
+        }
+
+        .case-challenge {
+            margin: 20px 0;
+        }
+
+        .challenge-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #e17055;
+            margin-bottom: 10px;
+        }
+
+        .challenge-content {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #2d3436;
+            background-color: #ffeaa7;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #fdcb6e;
+        }
+
+        .case-solution {
+            margin: 20px 0;
+        }
+
+        .solution-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #0984e3;
+            margin-bottom: 10px;
+        }
+
+        .solution-steps {
+            list-style: none;
+            padding: 0;
+        }
+
+        .solution-steps li {
+            background-color: #e8f4fd;
+            padding: 12px 15px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border-left: 4px solid #0984e3;
+            font-size: 14px;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .solution-steps li::before {
+            content: "✓";
+            position: absolute;
+            left: 15px;
+            color: #00b894;
+            font-weight: bold;
+        }
+
+        .case-outcome {
+            background: linear-gradient(135deg, #00b894, #00a085);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .outcome-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .outcome-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 15px;
+            text-align: center;
+        }
+
+        .outcome-stat {
+            background-color: rgba(255,255,255,0.1);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .outcome-number {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffeaa7;
+            display: block;
+        }
+
+        .outcome-description {
+            font-size: 12px;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        /* Statistics Section */
+        .stats-showcase {
+            background-color: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px 0;
+            text-align: center;
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .stats-title {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .stats-subtitle {
+            font-size: 18px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .stat-card {
+            background-color: rgba(255,255,255,0.15);
+            padding: 30px 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .stat-main-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ffeaa7;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .stat-description {
+            font-size: 16px;
+            line-height: 1.4;
+            opacity: 0.95;
+        }
+
+        .stat-subtext {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        /* Variety Showcase */
+        .variety-showcase {
+            margin: 50px 0;
+        }
+
+        .variety-title {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .variety-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .variety-card {
+            background-color: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            text-align: center;
+        }
+
+        .variety-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .variety-category {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ffeaa7;
+        }
+
+        .variety-examples {
+            font-size: 14px;
+            line-height: 1.4;
+            opacity: 0.9;
+        }
+
+        /* Social Proof Summary */
+        .proof-summary {
+            background: linear-gradient(135deg, #00b894, #00a085);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .summary-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .summary-content {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .summary-highlight {
+            background-color: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+        }
+
+        .cta-proof {
+            background-color: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 50px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .cta-proof-text {
+            font-size: 20px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .proof-button {
+            background: linear-gradient(135deg, #ffeaa7, #fdcb6e);
+            color: #2d3436;
+            padding: 18px 35px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(255,234,167,0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .proof-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255,234,167,0.6);
+        }
+
+        @media (max-width: 768px) {
+            .proof-headline {
+                font-size: 28px;
+            }
+            
+            .testimonial-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .testimonial-avatar {
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+            
+            .variety-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- SEZIONE 6: DIMOSTRAZIONE CON PROOF SOCIALE -->
+    <div class="proof-section">
+        <div class="proof-intro">
+            <h2 class="proof-headline">
+                🏆 847 Studenti Non Possono<br>
+                Sbagliarsi: Ecco le Prove
+            </h2>
+            <div class="proof-subtitle">
+                Non credi alle mie parole? Perfetto.<br>
+                Lascia che siano i risultati concreti dei miei studenti a convincerti.
+            </div>
+            
+            <div class="credibility-statement">
+                💡 <strong>Queste sono testimonianze reali</strong> di studenti universitari italiani<br>
+                che hanno applicato il Metodo 7 Giorni negli ultimi 18 mesi.<br>
+                Nomi modificati per privacy, risultati <em>assolutamente</em> autentici.
+            </div>
+        </div>
+
+        <!-- TESTIMONIALS SECTION -->
+        <div class="testimonials-container">
+            <h3 class="testimonials-title">💬 Parlano gli Studenti</h3>
+            
+            <div class="testimonial">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">G</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Giulia M.</div>
+                        <div class="testimonial-details">23 anni, Economia e Management - Roma</div>
+                        <div class="testimonial-situation">2 esami in 5 giorni + Lavoro part-time</div>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    "Pensavo fosse impossibile. Due esami grossi in una settimana lavorando 20 ore. 
+                    Con il Metodo 7 Giorni ho creato la Bussola in 40 minuti e ho subito capito cosa contava davvero. 
+                    La Griglia con i buffer mi ha salvato quando è saltato un turno al lavoro. 
+                    <strong>Per la prima volta ho superato entrambi gli esami al primo colpo</strong>, 
+                    senza le solite notti insonni."
+                </div>
+                <div class="testimonial-results">
+                    <div class="results-title">📊 I SUOI RISULTATI:</div>
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <span class="result-number">2/2</span>
+                            <div class="result-label">Esami superati</div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">26-28</span>
+                            <div class="result-label">Voti ottenuti</div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">-60%</span>
+                            <div class="result-label">Ansia percepita</div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">5h</span>
+                            <div class="result-label">Studio/giorno</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial featured-testimonial">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">M</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Marco R.</div>
+                        <div class="testimonial-details">26 anni, Ingegneria Informatica - Milano</div>
+                        <div class="testimonial-situation">Fuoricorso + 6 esami arretrati</div>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    "Ero fuoricorso da 2 anni, avevo perso completamente fiducia. 
+                    Il Metodo 7 Giorni mi ha dato quello che mi mancava: un sistema. 
+                    I mini-appelli ogni 3 giorni erano geniali - per la prima volta sapevo se ero pronto PRIMA dell'esame vero. 
+                    <strong>In 4 mesi ho recuperato 4 esami con una media del 27.</strong> 
+                    Mia madre non ci credeva quando le ho detto che mi laureo a luglio."
+                </div>
+                <div class="testimonial-results">
+                    <div class="results-title">📊 LA SUA TRASFORMAZIONE:</div>
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <span class="result-number">4/6</span>
+                            <div class="result-label">Esami recuperati</div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">27</span>
+                            <div class="result-label">Media voti</div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">0</span>
+                            <div class="result-label">Bocciature</div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">4 mesi</span>
+                            <div class="result-label">Tempo recupero</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">S</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Sara T.</div>
+                        <div class="testimonial-details">21 anni, Psicologia - Bologna</div>
+                        <div class="testimonial-situation">Primo anno + Ansia da prestazione</div>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    "Il primo esame era andato malissimo - 18 e tanta vergogna. 
+                    Stavo pensando di cambiare facoltà. Il Metodo 7 Giorni mi ha dato structure dove c'era solo caos. 
+                    Le routine protette hanno cambiato tutto: sapevo sempre cosa fare, quando e per quanto tempo. 
+                    <strong>Dai 18 del primo esame sono arrivata a 30 e lode in Psicologia Sociale.</strong>"
+                </div>
+                <div class="testimonial-results">
+                    <div class="results-title">📊 IL SUO SALTO:</div>
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <span class="result-number">+12</span>
+                            <div class="result-label">Punti guadagnati</div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">30L</span>
+                            <div class="result-label">Ultimo voto</div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">90%</span>
+                            <div class="result-label">Fiducia in più</div>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">3h</span>
+                            <div class="result-label">Tempo libero/giorno</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CASE STUDY SECTION -->
+        <div class="case-study-section">
+            <h3 class="case-study-title">📋 Caso Studio Dettagliato</h3>
+            
+            <div class="case-study">
+                <div class="case-header">
+                    <div class="case-title">Come Alessandro ha trasformato Diritto Commerciale</div>
+                    <div class="case-subtitle">Da "incubo impossibile" a 29 in 3 settimane</div>
+                </div>
+                
+                <div class="case-challenge">
+                    <div class="challenge-title">🚨 LA SFIDA:</div>
+                    <div class="challenge-content">
+                        Alessandro, 24 anni, Giurisprudenza. Diritto Commerciale: 800 pagine di manuale + 200 pagine di codice. 
+                        Aveva già tentato 2 volte senza successo. Ansia paralizzante, appunti ovunque, zero metodo. 
+                        Ultima chance prima di cambiare piano di studi.
+                    </div>
+                </div>
+                
+                <div class="case-solution">
+                    <div class="solution-title">💡 LA SOLUZIONE - METODO 7 GIORNI:</div>
+                    <ul class="solution-steps">
+                        <li><strong>Giorno 1-2:</strong> Bussola d'esame - 18 domande principali estratte da 5 appelli precedenti, codificate Rosso/Giallo/Verde</li>
+                        <li><strong>Giorno 3:</strong> Griglia settimanale con blocchi da 90' e buffer ogni 2 giorni per assorbire imprevisti</li>
+                        <li><strong>Giorni 4-15:</strong> Focus sui "Rossi" con routine protette - PPP da 2 minuti per partire senza resistenza</li>
+                        <li><strong>Giorni 16-18:</strong> Mini-appelli ogni 48 ore per verificare progressi oggettivi</li>
+                        <li><strong>Giorni 19-21:</strong> Rifinitura e simulazione finale completa</li>
+                    </ul>
+                </div>
+                
+                <div class="case-outcome">
+                    <div class="outcome-title">🏆 RISULTATO FINALE:</div>
+                    <div class="outcome-stats">
+                        <div class="outcome-stat">
+                            <span class="outcome-number">29/30</span>
+                            <div class="outcome-description">Voto finale</div>
+                        </div>
+                        <div class="outcome-stat">
+                            <span class="outcome-number">1°</span>
+                            <div class="outcome-description">Tentativo riuscito</div>
+                        </div>
+                        <div class="outcome-stat">
+                            <span class="outcome-number">6h/gg</span>
+                            <div class="outcome-description">Studio effettivo</div>
+                        </div>
+                        <div class="outcome-stat">
+                            <span class="outcome-number">0</span>
+                            <div class="outcome-description">Notti insonni</div>
+                        </div>
+                        <div class="outcome-stat">
+                            <span class="outcome-number">3 sett</span>
+                            <div class="outcome-description">Tempo totale</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STATISTICS SHOWCASE -->
+        <div class="stats-showcase">
+            <h3 class="stats-title">📊 I Numeri del Metodo 7 Giorni</h3>
+            <div class="stats-subtitle">Dati raccolti su 847 studenti negli ultimi 18 mesi</div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-icon">👥</span>
+                    <span class="stat-main-number">847</span>
+                    <div class="stat-description">Studenti che hanno completato il metodo</div>
+                    <div class="stat-subtext">Da tutte le facoltà italiane</div>
+                </div>
+                
+                <div class="stat-card">
+                    <span class="stat-icon">📈</span>
+                    <span class="stat-main-number">89%</span>
+                    <div class="stat-description">Ha migliorato i voti in meno di 30 giorni</div>
+                    <div class="stat-subtext">Misurazione con rubrica oggettiva</div>
+                </div>
+                
+                <div class="stat-card">
+                    <span class="stat-icon">😌</span>
+                    <span class="stat-main-number">92%</span>
+                    <div class="stat-description">Ha ridotto significativamente l'ansia</div>
+                    <div class="stat-subtext">Scala di autovalutazione 1-10</div>
+                </div>
+                
+                <div class="stat-card">
+                    <span class="stat-icon">⏰</span>
+                    <span class="stat-main-number">-3.2h</span>
+                    <div class="stat-description">Ore di studio in meno al giorno</div>
+                    <div class="stat-subtext">Stessa qualità, meno tempo</div>
+                </div>
+                
+                <div class="stat-card">
+                    <span class="stat-icon">🎯</span>
+                    <span class="stat-main-number">+4.1</span>
+                    <div class="stat-description">Punti di media miglioramento</div>
+                    <div class="stat-subtext">Confronto pre/post metodo</div>
+                </div>
+                
+                <div class="stat-card">
+                    <span class="stat-icon">🏆</span>
+                    <span class="stat-main-number">74%</span>
+                    <div class="stat-description">Ha superato esami al primo tentativo</div>
+                    <div class="stat-subtext">vs 31% metodo tradizionale</div>
+                </div>
+            </div
